@@ -35,6 +35,7 @@ def prompter():
     """ asks for things """
 
     command = input("How may I help you?: [weather, square, go away, bye]")
+    command = command.lower()
     if command == "weather":
         city = input("Sure thing! What city?")
         dispatcher(command, city)
